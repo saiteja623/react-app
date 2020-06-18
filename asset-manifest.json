@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/react-app/static/css/main.85166be0.chunk.css",
+    "main.js": "/react-app/static/js/main.e4b1f49d.chunk.js",
+    "main.js.map": "/react-app/static/js/main.e4b1f49d.chunk.js.map",
+    "runtime-main.js": "/react-app/static/js/runtime-main.bdf12047.js",
+    "runtime-main.js.map": "/react-app/static/js/runtime-main.bdf12047.js.map",
+    "static/js/2.35940247.chunk.js": "/react-app/static/js/2.35940247.chunk.js",
+    "static/js/2.35940247.chunk.js.map": "/react-app/static/js/2.35940247.chunk.js.map",
+    "index.html": "/react-app/index.html",
+    "precache-manifest.a17f2cf9f09885b480b9fe03925965e5.js": "/react-app/precache-manifest.a17f2cf9f09885b480b9fe03925965e5.js",
+    "service-worker.js": "/react-app/service-worker.js",
+    "static/css/main.85166be0.chunk.css.map": "/react-app/static/css/main.85166be0.chunk.css.map",
+    "static/js/2.35940247.chunk.js.LICENSE.txt": "/react-app/static/js/2.35940247.chunk.js.LICENSE.txt",
+    "static/media/backgroun2.jpg": "/react-app/static/media/backgroun2.01dd8a51.jpg",
+    "static/media/background3.jpeg": "/react-app/static/media/background3.7539d097.jpeg",
+    "static/media/calculator.jpg": "/react-app/static/media/calculator.4551f79c.jpg",
+    "static/media/computer.jpg": "/react-app/static/media/computer.ac02a7a5.jpg",
+    "static/media/all.css": "/react-app/static/media/fa-solid-900.ec763292.svg",
+    "static/media/weather.css": "/react-app/static/media/weather8.6e009406.jpg",
+    "static/media/quiz.png": "/react-app/static/media/quiz.6e6720a1.png",
+    "static/media/socialmedia.png": "/react-app/static/media/socialmedia.b7ab662a.png",
+    "static/media/todo.jpg": "/react-app/static/media/todo.569e9c2b.jpg",
+    "static/media/typing1.jpg": "/react-app/static/media/typing1.1d703d49.jpg",
+    "static/media/weather.png": "/react-app/static/media/weather.86810fbe.png",
+    "static/media/winner.png": "/react-app/static/media/winner.42e491af.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdf12047.js",
+    "static/js/2.35940247.chunk.js",
+    "static/css/main.85166be0.chunk.css",
+    "static/js/main.e4b1f49d.chunk.js"
+  ]
+}
