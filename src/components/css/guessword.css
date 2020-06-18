@@ -1,0 +1,104 @@
+body {
+  background: pink;
+}
+.keyboard button {
+  cursor: pointer;
+  padding: 8px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-family: verdana;
+  transition: 0.4s ease all;
+  outline: none;
+  border: none;
+  margin: 2px;
+  width: 40px;
+  height: 40px;
+}
+.keyboard button:active {
+  color: green;
+}
+.question {
+  margin: 30px auto;
+  margin-bottom: 0;
+  min-width: 60px;
+  max-width: 600px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.keyboard button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.2);
+}
+.guessword-heading {
+  font-size: 2.3rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-top: 100px;
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+.randomque {
+  vertical-align: middle;
+  font-size: 1.6rem;
+  padding-top: 2px;
+  font-family: sans-serif;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: black;
+  margin: 10px;
+  display: inline-block;
+  transition: 1s ease all;
+  color: white;
+}
+.keyboard {
+  margin: 5% auto;
+  margin-bottom: 0;
+  background-color: gray;
+  padding: 10px;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+.keyrow {
+  align-items: center;
+  margin: 6px;
+  text-align: center;
+}
+.hearts {
+  margin: 30px auto;
+  color: blue;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 200px;
+}
+@media only screen and (max-width: 600px) {
+  .keyboard {
+    width: 92%;
+    padding: 10px 5px;
+  }
+  .keyrow {
+    margin: 2px;
+  }
+  .keyboard button {
+    padding: 2px;
+    width: 7%;
+    height: 10%;
+  }
+  .question {
+    width: 90%;
+  }
+  .randomque {
+    width: 7%;
+    height: 20px;
+    margin: 2%;
+    font-size: 100%;
+    vertical-align: middle;
+  }
+}

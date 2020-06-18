@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Titillium+Web&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+}
+.home-total {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: background 0.5s ease;
+}
+.home-header {
+  width: 100%;
+  height: 90px;
+  background: black;
+  color: white;
+  display: flex;
+  position: relative;
+  vertical-align: middle;
+}
+.home-header p {
+  margin-left: 30px;
+  font-size: 1.5rem;
+}
+.home-header .about {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-size: 0.4rem;
+}
+.about li {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  font-size: 1.4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.home-total .text {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-left: -200px;
+  text-align: initial;
+  margin-bottom: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  animation: textanim 0.9s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+@keyframes textanim {
+  from {
+    margin-left: -200px;
+  }
+  to {
+    margin-left: 20px;
+  }
+}
+.typetext {
+  color: orange;
+}
+.cursor {
+  display: inline-block;
+  height: 19px;
+  width: 1px;
+  animation: blink 1s infinite;
+  background: white;
+}
+@keyframes blink {
+  0% {
+    background: transparent;
+  }
+  25% {
+    background: white;
+  }
+  50% {
+    background: transparent;
+  }
+  75% {
+    background: white;
+  }
+  100% {
+    background: transparent;
+  }
+}
+.flex-1 {
+  margin: 10px auto;
+  margin-bottom: 0px;
+  display: inline-flex;
+  width: 90%;
+  min-height: 250px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.flex-2 {
+  display: inline-flex;
+  margin: 10px auto;
+  width: 90%;
+  min-height: 250px;
+
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.home-card {
+  margin-top: 10px;
+  width: 170px;
+  height: 90%;
+  background: white;
+  object-fit: cover;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.link {
+  opacity: 0;
+  animation: fadein 0.5s linear;
+  animation-fill-mode: forwards;
+}
+.flex-1 .link:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.flex-1 .link:nth-child(2) {
+  animation-delay: 1s;
+}
+.flex-1 .link:nth-child(3) {
+  animation-delay: 2s;
+}
+.flex-1 .link:nth-child(4) {
+  animation-delay: 3s;
+}
+.flex-2 .link:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.flex-2 .link:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.flex-2 .link:nth-child(3) {
+  animation-delay: 2.5s;
+}
+.home-card li {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-family: "Oswald";
+  font-weight: 400;
+  position: relative;
+  max-width: 90%;
+  margin: 0px auto;
+  font-size: 1.2rem;
+}
+.home-card li:before {
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 0;
+  border: solid 1px transparent;
+  left: 0;
+  bottom: 0;
+}
+.home-card:hover li:before {
+  width: 100%;
+  height: 100%;
+  border: solid 2px black;
+  border-bottom: none;
+  border-right: none;
+  transition: height 0.2s linear, width 0.5s linear 0.2s;
+}
+.home-card li:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 0;
+  border: solid 1px transparent;
+  top: 0;
+  right: 0;
+}
+.home-card:hover li:after {
+  width: 100%;
+  height: 100%;
+  border: solid 2px black;
+  border-top: none;
+  border-left: none;
+  transition: height 0.2s linear, width 0.5s linear 0.2s;
+}
+.home-card:hover {
+  transform: scale(1.1);
+}
+.home-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 80%;
+}
+.information {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  font-family: ubuntu;
+
+  background: rgb(0, 0, 0, 0.9);
+  display: none;
+  animation: showinf 0.5s linear;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+  bottom: 0px;
+  color: white;
+  font-size: 0.9rem;
+  vertical-align: middle;
+  font-family: "Titillium Web";
+  vertical-align: middle;
+  align-items: middle;
+  justify-content: center;
+  margin-top: 20px;
+}
+.information .inside-information {
+  position: relative;
+  top: 50%;
+  width: 95%;
+  max-height: 100%;
+  transform: translateY(-50%);
+}
+@keyframes showinf {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+.home-card:hover .information {
+  display: block;
+}
+@media only screen and (max-width: 500px) {
+  .home-total {
+    height: 100vh;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+  .home-header {
+    height: 60px;
+  }
+  .home-header p {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  .about li {
+    font-size: 1rem;
+  }
+  .text span {
+    font-size: 1rem;
+  }
+  .typetext {
+    font-size: 1rem;
+  }
+  .flex-1 {
+    width: 100%;
+    max-height: 1900px;
+  }
+  .flex-2 {
+    width: 100%;
+    max-height: 1900px;
+  }
+  .home-total .home-card {
+    height: 250px;
+    width: 70%;
+    margin: 10px auto;
+  }
+  .flex-2 .home-card {
+    height: 250px;
+    width: 70%;
+    margin: 10px auto;
+  }
+  .flex-2 .link:nth-child(1) {
+    width: 70%;
+  }
+  .flex-2 .link:nth-child(2) {
+    width: 70%;
+  }
+  .flex-2 .link:nth-child(3) {
+    width: 70%;
+  }
+}
+/*
+.home-card:hover:before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+
+  z-index: -1;
+  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+  box-sizing: border-box;
+}
+.home-card:hover:after {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  z-index: -2;
+  filter: blur(2px);
+  box-sizing: border-box;
+  background: linear-gradient(to right, #89ff00, #060c21, #00bcd4);
+}
+*/

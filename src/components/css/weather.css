@@ -1,0 +1,191 @@
+.weather-body {
+  background-image: url("./lightning.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  animation: image 20s infinite;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+@keyframes image {
+  20% {
+    background-image: url("./weather5.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  40% {
+    background-image: url("./weather8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+  }
+  60% {
+    background-image: url("./weather6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+  }
+  80% {
+    background-image: url("./weather7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+  }
+  100% {
+    background-image: url("./lightning.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+}
+.no-search {
+  width: 100%;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.fail {
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  border: solid 1px black;
+  background-color: red;
+  width: 230px;
+  margin-left: 30px;
+  padding: 6px 3px;
+  text-align: center;
+}
+
+.weather-container {
+  margin: 100px auto;
+  width: 300px;
+  border: transparent;
+  padding: 10px;
+  max-height: 400px;
+  min-height: 50px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  opacity: 0.5;
+  background: transparent;
+  transition: ease 0.5s all;
+  border-radius: 6px;
+  background-color: rgb(154, 205, 50);
+}
+.weather-container:hover {
+  opacity: 1;
+}
+.weather-container input:hover {
+  border: solid 1px blue;
+}
+.weather-container input:visited {
+  border: solid 1px red;
+}
+.weather-container input {
+  margin-left: 20px;
+  padding: 4px;
+  padding-left: 6px;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 70%;
+}
+.report {
+  text-transform: capitalize;
+  border: solid 1px rgb(0, 0, 0, 0.5);
+  margin: 10px auto;
+  padding-left: 30px;
+  padding-top: 0;
+  background-color: pink;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+}
+.submit {
+  background-color: rgb(22, 75, 155);
+  color: white;
+  padding-left: 6px;
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.heading .title {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 30px;
+  left: 200px;
+}
+@media only screen and (max-width: 800px) {
+  .heading .title {
+    left: 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .heading .moon {
+    display: none;
+  }
+  .weather-container {
+    opacity: 1;
+  }
+  .heading {
+    height: 50px;
+  }
+  .report {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .weather-container {
+    margin: 30px auto;
+    max-height: 330px;
+    opacity: 1;
+  }
+  .heading {
+    height: 50px;
+  }
+}
+.heading {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin: 10px auto;
+  border-radius: 6px;
+  height: 90px;
+  position: relative;
+  width: 98%;
+}
+.heading .moon {
+  height: 80px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+}
+.report .image {
+  float: right;
+}

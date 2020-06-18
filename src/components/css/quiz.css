@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Josefin+Sans&family=Maven+Pro:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Josefin+Sans&family=Lora:wght@500&family=Maven+Pro:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Josefin+Sans&family=Lora:wght@500&family=Maven+Pro:wght@500&family=Roboto&display=swap");
+body {
+  background: purple;
+  overflow: hidden;
+}
+.select-topic {
+  width: 500px;
+  height: 400px;
+  background: white;
+  box-shadow: 0 20px 30px rgb(0, 0, 0, 0.4);
+  margin: 100px auto;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.select-topic p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.select-topic .topic {
+  margin: 20px;
+  outline: none;
+  border: none;
+  background: lightgray;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 10px;
+}
+.select-topic .topic option {
+  background: lightgreen;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.select-topic button {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  background: purple;
+  color: white;
+  padding: 6px 8px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  border: none;
+  outline: none;
+  letter-spacing: 0.05rem;
+}
+.select-topic .level {
+  padding: 4px 10px;
+  margin: 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: lightgray;
+  font-size: 1rem;
+}
+.level option {
+  background: lightgreen;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: all 0.5s ease;
+}
+.quiz-container {
+  margin: 100px auto;
+  width: 600px;
+  max-height: 370px;
+  padding: 10px;
+  box-shadow: 1px 0px 1px 2px rgb(0, 0, 0, 0.6);
+  z-index: 100;
+  background: rgb(245, 245, 245, 0.9);
+  box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.3);
+}
+.quiz-question {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+}
+.options {
+  margin: 10px 20px;
+  padding: 6px;
+  width: 80%;
+  max-height: 65%;
+}
+.option {
+  margin: 10px;
+  border-radius: 20px;
+  width: 250px;
+  min-height: 30px;
+  max-height: 90px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 10px 2px 0px 15px;
+  background: white;
+  border: none;
+  outline: none;
+  transition: all 0.5s ease-out;
+  font-weight: 560;
+  line-height: 100%;
+}
+.option:hover {
+  border: solid 0.01px purple;
+}
+.winner-div {
+  width: 500px;
+  height: 400px;
+
+  color: white;
+  margin: 100px auto;
+  padding: 10px;
+  text-align: center;
+}
+.winner-div img {
+  width: 80%;
+  height: 300px;
+  background: transparent;
+}
+.winner-div button {
+  border: none;
+  outline: none;
+  margin: 6px;
+  padding: 6px 10px;
+  background: blue;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
+}
+@media only screen and (max-width: 600px) {
+  .quiz-container {
+    width: 90%;
+  }
+  .select-topic {
+    width: 90%;
+  }
+  .select-topic button {
+    font-size: 1rem;
+  }
+  .select-topic p {
+    font-size: 1rem;
+  }
+  .select-topic .topic {
+    font-size: 0.9rem;
+  }
+  .select-topic .level {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .quiz-container {
+    padding: 6px 4px;
+  }
+  .quiz-question {
+    font-size: 1.1rem;
+  }
+  .options {
+    margin-left: 4px;
+  }
+  .option {
+    font-size: 0.9rem;
+    margin-left: 2px;
+    min-height: 20px;
+    width: 80%;
+  }
+  .winner-div {
+    width: 90%;
+    padding: 0;
+    font-size: 0.4rem;
+  }
+  .winner-div img {
+    width: 70%;
+    height: 50%;
+  }
+  .winner-div button {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .winner-div img {
+    width: 100%;
+  }
+}
